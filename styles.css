@@ -37,7 +37,7 @@ a {
 
 /* SECCION 1: FONDO PRINCIPAL */
 .fondo_principal {
-	background-image: url('/ITALIKRACK/Slider fondo.png');
+	background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Slider fondo.png');
 	height: 920px;
 	position: relative;
 	background-color: transparent;
@@ -325,7 +325,35 @@ header ul li a:hover {
 	}
 }
 
-
+@media screen and (max-width: 380px) {
+	.slider img {
+	  width: 100%;
+	  height: auto;
+	  /* Aplica la proporción deseada */
+	  max-width: 300px;
+	  max-height: 400px;
+	}
+  
+	.navbar {
+	  padding: 1rem;
+	}
+  
+	.slider {
+	  margin-top: 250px;
+	}
+  
+	.slider ul {
+	  height: 75px;
+	}
+  
+	.slider .mejores_motos,
+	.slider .archivo_2,
+	.slider .archivo_3 {
+	  width: 300px;
+	  height: 400px;
+	  margin-left: 0;
+	}
+  }
 
 /* ===================================== */
 /* SECCION 2 : MODELOS */
@@ -594,6 +622,58 @@ header ul li a:hover {
 		display: none;
 	}
 }
+@media screen and (max-width: 380px) {
+	.Modelos h2 {
+		margin-left: 20px;
+	}
+
+	.cards {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		width: 80%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+
+	.card .image {
+		display: flex;
+		justify-content: center;
+	}
+
+	.card .image img {
+		width: 100%;
+		height: auto;
+	}
+
+	#s5:checked~.cards #slide5,
+	#s2:checked~.cards #slide2,
+	#s1:checked~.cards #slide1,
+	#s1:checked~.cards #slide2,
+	#s2:checked~.cards #slide3,
+	#s5:checked~.cards #slide1 {
+		box-shadow: none;
+	}
+
+	.card .infos {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.card .name {
+		font-size: 16px;
+	}
+
+	.card .lorem {
+		font-size: 16px;
+	}
+
+	.card .dots {
+		display: none;
+	}
+}
 
 
 
@@ -604,7 +684,7 @@ header ul li a:hover {
 /* ===================================== */
 /* SECCION 3 : ABOUTS */
 .About {
-	background-image: url('/ITALIKRACK/fondo-quienes-somos.png');
+	background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-quienes-somos.png');
 }
 
 .About .About_2 {
@@ -645,6 +725,20 @@ header ul li a:hover {
 		margin-bottom: 80px;
 	}
 
+}
+@media screen and (max-width: 380px) {
+	.About {
+		background-position-x: 0;
+	}
+
+	.About .About_2 .About_3 {
+		margin-left: 20px;
+	}
+
+	.About_3 p {
+		font-size: 14px;
+		margin-bottom: 40px;
+	}
 }
 
 /* ===================================== */
