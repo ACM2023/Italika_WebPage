@@ -943,7 +943,7 @@ img {
 /* ===================================== */
 /* SECCION 6 : CONTACTANOS */
 .Contactanos {
-	background-image: url('/ITALIKRACK/fondo-contacto.png');
+	background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-contacto.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
