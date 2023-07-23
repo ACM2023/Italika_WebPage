@@ -1110,6 +1110,7 @@ img {
 	width: 50%;
 	padding: 50px;
 	margin-left: 300PX;
+	display: flex;
 }
 
 .poster .post1 {

@@ -1,194 +1,78 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Italika | Siéntele, vívela y manéjala</title>
-	<link rel="icon" alt="" href="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto.png" />
-	<!-- 
-<link rel="stylesheet" href="https://acm2023.github.io/Italika_WebPage/styles.css"> -->
-	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@500&display=swap"
-		rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;500&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italika | Siéntele, vívela y manéjala</title>
+    <link rel="icon" alt="" href="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto.png" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-	
-		<header>
-			<img style="padding-top: 50px;" class="LOGO" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/logo-italika.png" alt="logotipo de Italika">
-			<div class="header-left">
-				<div class="logo">
-					<img src="./logo.png" alt="">
-				</div>
-				<nav>
-					
-					<ul>
-						<li><a href="#modelos">MODELOS </a></li>
-						<li><a href="#nosotros">NOSOTROS </a></li>
-						<li><a href="#respaldo">RESPALDO </a></li>
-						<li><a href="#distribuidores">TIENDAS</a></li>
-						<li><a href="#contactanos">CONTACTO </a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="header-right">
-				<div class="hamburger">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-			</div>
-		</header>
-
-		<script>
-			hamburger = document.querySelector(".hamburger");
-			nav = document.querySelector("nav");
-			hamburger.onclick = function () {
-				nav.classList.toggle("active");
-			}
-		</script>
-		<section style="height: 900px;background-color: red;">
-			<div>
-				<h1 class="motos-best" style="color: white;text-align: center;margin-top: 1000px;">LAS MEJORES MOTOS</h1>
-			</div>
-		</section>
-		<!-- <section class="main">
-			<div class="fondo_principal" style="margin-top: 260px;">
-				<div class="slider">
-					<ul>
-						<li>
-							<img class="mejores_motos" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/las-mejores-motos.png" alt="moto lineal blanca">
-						</li>
-						<li>
-							<img class="archivo_2" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Archivo-2.png" alt="imagen 2">
-						</li>
-						<li>
-							<img class="archivo_3" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/archivo-3.png" alt="imagen 3">
-						</li>
-					</ul>
-				</div>
-			</div>
-			<h1 class="h1_style">DE TODO EL PERÚ</h1>
-		<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/icono-wsp.png" alt="icono de WhatsApp" style="position: absolute; bottom: 0; right: 0;">
-		<a href="https://www.facebook.com/ItalikaOficial/?locale=es_LA"><img class="facebook" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png" alt="icono de Facebook"></a>
-		<a href=https://www.instagram.com/italikaoficial/ ><img class="insta" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png" alt="icono de Instagram"></a>
-		<a href="https://www.tiktok.com/@italikaoficial?lang=es" ><img class="tiktok" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png" alt="icono de TikTok"></a>
-		</section> -->
-		<!-- <div class="fondo_principal">
-		<header class="nav_color">
-			<div class="header-left">
-			<nav class="navbar">
-			  <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/logo-italika.png" alt="logotipo de Italika">
-			  <ul class="ul_nav">
-				<li><a href="#modelos">MODELOS</a></li>
-				<li><a href="#nosotros">NOSOTROS</a></li>
-				<li><a href="#respaldo">RESPALDO</a></li>
-				<li><a href="#distribuidores">TIENDAS</a></li>
-				<li><a href="#contactanos">CONTACTO</a></li>
-			  </ul>
-			</nav>
-		</div>
-		<div class="header-right">
-            <div class="hamburger">
-                <div></div>
-                <div></div>
-                <div></div>
+    <header>
+        <div class="navbar">
+            <img class="logo" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/logo-italika.png"
+                alt="logotipo de Italika">
+            <ul class="links">
+                <li><a href="#modelos">MODELOS </a></li>
+                <li><a href="#nosotros">NOSOTROS </a></li>
+                <li><a href="#respaldo">RESPALDO </a></li>
+                <li><a href="#distribuidores">TIENDAS</a></li>
+                <li><a href="#contactanos">CONTACTO </a></li>
+            </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
-		  </header>
-		  
-	
-		<div class="slider">
-			<ul>
-				<li>
-					<img class="mejores_motos" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/las-mejores-motos.png" alt="moto lineal blanca">
-				</li>
-				<li>
-					<img class="archivo_2" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Archivo-2.png" alt="imagen 2">
-				</li>
-				<li>
-					<img class="archivo_3" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/archivo-3.png" alt="imagen 3">
-				</li>
-			</ul>
-		</div>
-	
-		<h1 class="h1_style">DE TODO EL PERÚ</h1>
-		<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/icono-wsp.png" alt="icono de WhatsApp" style="position: absolute; bottom: 0; right: 0;">
-		<a href="https://www.facebook.com/ItalikaOficial/?locale=es_LA"><img class="facebook" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png" alt="icono de Facebook"></a>
-		<a href=https://www.instagram.com/italikaoficial/ ><img class="insta" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png" alt="icono de Instagram"></a>
-		<a href="https://www.tiktok.com/@italikaoficial?lang=es" ><img class="tiktok" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png" alt="icono de TikTok"></a>
-	</div> -->
-	
+        <div class="dropdown_menu ">
+            <li><a href="#modelos">MODELOS </a></li>
+            <li><a href="#nosotros">NOSOTROS </a></li>
+            <li><a href="#respaldo">RESPALDO </a></li>
+            <li><a href="#distribuidores">TIENDAS</a></li>
+            <li><a href="#contactanos">CONTACTO </a></li>
+        </div>
+    </header>
 
-	<!-- <section class="Modelos" id="modelos">
-		<h2>MODELOS</h2>
-		<div class="container">
-			<input type="radio" name="slider" class="d-none" id="s1" checked>
-			<input type="radio" name="slider" class="d-none" id="s2">
-			<input type="radio" name="slider" class="d-none" id="s5">
+    <main>
+        <section id="hero">
+            <h1>ITALIKA</h1>
+            <p>
+                HELLO!!
+            </p>
 
-			<div class="cards">
-				<label for="s1" id="slide1">
-					<div class="card">
-						<div class="image">
-							<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto-deportiva.png" alt="">
-							<div class="dots">
-								<div></div>
-								<div></div>
-								<div></div>
-							</div>
-						</div>
-						<div class="infos">
-							<h3 class="name">DEPORTIVAS</h3>
-							<span class="lorem">Llega más rápido a tu destino, estés donde estés</span>
-						</div>
-					</div>
-				</label>
-				<label for="s2" id="slide2">
-					<div class="card">
-						<div class="image">
-							<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto-todo-terreno.png" alt="">
-							<div class="dots">
-								<div class="dot1"></div>
-								<div class="dot2"></div>
-								<div class="dot3"></div>
-							</div>
-						</div>
-						<div class="infos">
-							<h3 class="name">TODO TERRENO</h3>
-							<span class="lorem">Supera cualquier obstáculo mientras conduces</span>
-						</div>
-					</div>
-				</label>
-				<label for="s5" id="slide5">
-					<div class="card">
-						<div class="image">
-							<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto-trabajo.png" alt="">
-							<div class="dots">
-								<div class="dot1"></div>
-								<div class="dot2"></div>
-								<div class="dot3"></div>
-							</div>
-						</div>
-						<div class="infos">
-							<h3 class="name">TRABAJO</h3>
-							<span class="lorem">Ideal para largas jornadas y con alto rendimiento de combustible</span>
-						</div>
-					</div>
-				</label>
-			</div>
-		</div>
-	</section> -->
+        </section>
+    </main>
 
-	<!-- <section class="About" id="nosotros">
+    <script>
+        const toggleBtn = document.querySelector(".toggle_btn")
+        const toggleBtnIcon = document.querySelector(".toggle_btn i")
+        const dropdownMenu = document.querySelector(".dropdown_menu")
+
+        toggleBtn.onclick = function () {
+            dropdownMenu.classList.toggle("open")
+            const isOpen = dropdownMenu.classList.contains("open")
+
+            toggleBtnIcon.classList = isOpen
+                ? "fa-solid fa-xmarks"
+                : "fa-solid fa.bars"
+        }
+    </script>
+    <!-- <section class="About" id="nosotros">
 		<div class="About_2">
 			<div class="About_3">
 				<h2>TE LO CONTAMOS</h2>
@@ -205,184 +89,197 @@
 		</div>
 	</section> -->
 
-	<!-- SECCION 4- RESPALDO -->
+    <!-- SECCION 4- RESPALDO -->
 
-	<section class="Respaldo" id="respaldo">
-		<h2>RESPALDO ITALIKA</h2>
-		<div class="Respaldo_2">
-			<div class="item">
-				<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/garantía.png" alt="icono de garantía">
-				<h3>GARANTÍA</h3>
-				<p>2 años o <br>20,000 kms</p>
-			</div>
-			<div class="item">
-				<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/refacciones.png" alt="icono de tuerca y llave">
-				<h3>REFACCIONES</h3>
-				<p>Más de 900 <br>refaccionarias</p>
-			</div>
-			<div class="item">
-				<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/servicios.png" alt="un técnico junto a una tuerca">
-				<h3>SERVICIOS</h3>
-				<p>Más de 700 CESIT's</p>
-			</div>
-			<div class="item">
-				<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/ensamblika.png" alt="maquina para ensamblar">
-				<h3>ENSAMBLIKA</h3>
-				<p>La ensambladora más <br>grande y moderna</p>
-			</div>
-			<div class="item">
-				<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/te-escuchamos.png" alt="un asesor de llamadas">
-				<h3>TE ESCUCHAMOS</h3>
-				<p>800 4825452 <br>@italikaoficial</p>
-			</div>
-		</div>
-	</section>
+    <section class="Respaldo" id="respaldo">
+        <h2>RESPALDO ITALIKA</h2>
+        <div class="Respaldo_2">
+            <div class="item">
+                <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/garantía.png" alt="icono de garantía">
+                <h3>GARANTÍA</h3>
+                <p>2 años o <br>20,000 kms</p>
+            </div>
+            <div class="item">
+                <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/refacciones.png"
+                    alt="icono de tuerca y llave">
+                <h3>REFACCIONES</h3>
+                <p>Más de 900 <br>refaccionarias</p>
+            </div>
+            <div class="item">
+                <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/servicios.png"
+                    alt="un técnico junto a una tuerca">
+                <h3>SERVICIOS</h3>
+                <p>Más de 700 CESIT's</p>
+            </div>
+            <div class="item">
+                <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/ensamblika.png"
+                    alt="maquina para ensamblar">
+                <h3>ENSAMBLIKA</h3>
+                <p>La ensambladora más <br>grande y moderna</p>
+            </div>
+            <div class="item">
+                <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/te-escuchamos.png"
+                    alt="un asesor de llamadas">
+                <h3>TE ESCUCHAMOS</h3>
+                <p>800 4825452 <br>@italikaoficial</p>
+            </div>
+        </div>
+    </section>
 
-	<!-- SECCION 5- DISTRIBUIDORES -->
+    <!-- SECCION 5- DISTRIBUIDORES -->
 
-	<!-- <section class="Distribuidores" id="distribuidores">
-		<div class="Distribuidores_div_main">
-		  <h2>DISTRIBUIDORES</h2>
-		  <input type="text" id="search" placeholder="Buscar distrito">
-		  <div class="Distribuidores_div">
-			<h3>Distritos</h3>
-			<select name="distritos" id="distritos">
-			  <option value="surco">Surco</option>
-			  <option value="molina">Molina</option>
-			  <option value="sanisidro">San Isidro</option>
-			  <option value="miraflores">Miraflores</option>
-			  <option value="sanborja">San Borja</option>
-			  <option value="barranco">Barranco</option>
-			  <option value="jesusmaria">Jesús María</option>
-			  <option value="chorrillos">Chorrillos</option>
-			  <option value="sanluis">San Luis</option>
-			  <option value="sanjuanlurigancho">San Juan de Lurigancho</option>
-			  <option value="callao">Callao</option>
-			  <option value="rimac">Rímac</option>
-			  <option value="ate">Ate</option>
-			  <option value="losolivos">Los Olivos</option>
-			  <option value="comas">Comas</option>
-			</select>
-		  </div>
-		</div>
-		<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/mapa-distribuidores.png" alt="MDN">
-	  </section> -->
+    <section class="Distribuidores" id="distribuidores">
+        <div class="Distribuidores_div_main">
+            <h2>DISTRIBUIDORES</h2>
+            <input type="text" id="search" placeholder="Buscar distrito">
+            <div class="Distribuidores_div">
+                <h3>Distritos</h3>
+                <select name="distritos" id="distritos">
+                    <option value="surco">Surco</option>
+                    <option value="molina">Molina</option>
+                    <option value="sanisidro">San Isidro</option>
+                    <option value="miraflores">Miraflores</option>
+                    <option value="sanborja">San Borja</option>
+                    <option value="barranco">Barranco</option>
+                    <option value="jesusmaria">Jesús María</option>
+                    <option value="chorrillos">Chorrillos</option>
+                    <option value="sanluis">San Luis</option>
+                    <option value="sanjuanlurigancho">San Juan de Lurigancho</option>
+                    <option value="callao">Callao</option>
+                    <option value="rimac">Rímac</option>
+                    <option value="ate">Ate</option>
+                    <option value="losolivos">Los Olivos</option>
+                    <option value="comas">Comas</option>
+                </select>
+            </div>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31211.770870428318!2d-77.0304179256836!3d-12.079849899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c63468ccd117%3A0x11a36a28bd10e6ef!2sITALIKA%20CANADA!5e0!3m2!1ses-419!2spe!4v1690093430392!5m2!1ses-419!2spe"
+             style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
-	<!-- SECCION 6- CONTACTANOS -->
+    <!-- SECCION 5- DISTRIBUIDORES -->
 
-	<!-- <section class="Contactanos" id="contactanos">
-		<div class="poster">
-		  <h2 style="font-size: 50px; margin-bottom: 20px">
-			CONTÁCTANOS</h2>
-		  <img class="post1" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/post.jpg" alt="">
-		</div>
-		<div class="Formulario">
-		  <form action="#" method="POST">
-			<h2>FORMA PARTE DE NUESTRA <br> FAMILIA</h2>
-			<div>
-			  <label for="nombre">NOMBRES *</label>
-			  <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
-			  <label for="apellidos">APELLIDOS *</label>
-			  <input type="text" id="apellidos" name="apellidos" required placeholder="Ingrese sus apellidos">
-			  <label for="telefono">TELÉFONO *</label>
-			  <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su teléfono">
-			  <label for="email">E-MAIL *</label>
-			  <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
-			  <label for="comentarios" style=" font-weight: bold;width: 100px;">MENSAJE *</label>
-			  <textarea id="comentarios" name="comentarios" required placeholder="Ingrese su mensaje"></textarea>
-			</div>
-			<div>
-			  <button type="submit">ENVIAR</button>
-			</div>
-		  </form>
-		</div>
-	  </section> -->
+    <!-- SECCION 6- CONTACTANOS -->
+
+    <section class="Contactanos" id="contactanos">
+        <div class="poster">
+            <h2 style="font-size: 50px; margin-bottom: 20px">
+                CONTÁCTANOS</h2>
+            <iframe class="post1"
+                src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FItalikaOficial%2Fposts%2Fpfbid0hWxMAXm5nACbsh9jcEPNPDgLHpA9c28QoX6x9qb7L9dsSnWbPYPrNkiTwXAobiHbl&show_text=true&width=500"
+                scrolling="no" frameborder="0" allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="Formulario">
+            <form class="form2" action="#" method="POST">
+                <h2>FORMA PARTE DE NUESTRA <br> FAMILIA</h2>
+                <div class="formulario2">
+                    <label for="nombre">NOMBRES *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+                    <label for="apellidos">APELLIDOS *</label>
+                    <input type="text" id="apellidos" name="apellidos" required placeholder="Ingrese sus apellidos">
+                    <label for="telefono">TELÉFONO *</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su teléfono">
+                    <label for="email">E-MAIL *</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
+                    <label for="comentarios" style=" font-weight: bold;width: 100px;">MENSAJE *</label>
+                    <textarea id="comentarios" name="comentarios" required placeholder="Ingrese su mensaje"></textarea>
+                </div>
+                <div>
+                    <button class="enviar" type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- SECCION 6- CONTACTANOS -->
+    <footer>
+        <div class="footer-gray">
+            <div class="footer-custom">
+                <div class="footer-lists">
 
 
-	<footer>
-		<div class="footer-gray">
-			<div class="footer-custom">
-				<div class="footer-lists">
+                    <div class="footer-list-wrap">
 
+                        <ul class="ftr-links-sub">
+                            <li><a href="#" rel="nofollow">Deporte</a></li>
+                            <li><a href="#" rel="nofollow">Chopper</a></li>
+                            <li><a href="#" rel="nofollow">Café racer</a></li>
+                            <li><a href="#" rel="nofollow">Returns</a></li>
+                            <li><a href="#" rel="nofollow">Trimotor</a></li>
+                            <li><a href="#" rel="nofollow">Gift Cards</a></li>
+                            <li><a href="#" rel="nofollow">Motoneta</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-wrap">
 
-					<div class="footer-list-wrap">
+                        <ul class="ftr-links-sub">
+                            <li><a href="#" rel="nofollow">Doble propósito</a></li>
+                            <li><a href="#" rel="nofollow">Adventure</a></li>
+                            <li><a href="#" rel="nofollow">Eléctrica</a></li>
+                            <li><a href="#" rel="nofollow">Línea -Z</a></li>
+                            <li><a href="#" rel="nofollow">Cuatrimoto</a></li>
+                            <li><a href="#" rel="nofollow">Vort -X</a></li>
+                            <li><a href="#" rel="nofollow">Crossover</a></li>
+                        </ul>
+                    </div>
 
-						<ul class="ftr-links-sub">
-							<li><a href="#" rel="nofollow">Deporte</a></li>
-							<li><a href="#" rel="nofollow">Chopper</a></li>
-							<li><a href="#" rel="nofollow">Café racer</a></li>
-							<li><a href="#" rel="nofollow">Returns</a></li>
-							<li><a href="#" rel="nofollow">Trimotor</a></li>
-							<li><a href="#" rel="nofollow">Gift Cards</a></li>
-							<li><a href="#" rel="nofollow">Motoneta</a></li>
-						</ul>
-					</div>
-					<div class="footer-list-wrap">
+                </div>
 
-						<ul class="ftr-links-sub">
-							<li><a href="#" rel="nofollow">Doble propósito</a></li>
-							<li><a href="#" rel="nofollow">Adventure</a></li>
-							<li><a href="#" rel="nofollow">Eléctrica</a></li>
-							<li><a href="#" rel="nofollow">Línea -Z</a></li>
-							<li><a href="#" rel="nofollow">Cuatrimoto</a></li>
-							<li><a href="#" rel="nofollow"><strong>Vort -X</strong></a></li>
-							<li><a href="#" rel="nofollow">Crossover</a></li>
-						</ul>
-					</div>
+                <div class="footer-email">
+                    <h3>ÚNETE AL CLUB</h3>
+                    <div id="ftr-email" class="ftr-email-form">
+                        <form id="ftrEmailForm">
 
-				</div>
+                            <input type="text" id="ftrEmailInput" class="input" placeholder="Correo electrónico:" />
 
-				<div class="footer-email">
-					<h3>ÚNETE AL CLUB</h3>
-					<div id="ftr-email" class="ftr-email-form">
-						<form id="ftrEmailForm">
+                            <input type="submit" class="button" value="ENVIAR" />
 
-							<input type="text" id="ftrEmailInput" class="input" placeholder="Correo electrónico:" />
+                        </form>
+                    </div>
 
-							<input type="submit" class="button" value="ENVIAR" />
+                    <div class="ftr-email-privacy-policy"></div>
+                </div>
 
-						</form>
-					</div>
+                <div class="footer-social">
+                    <h6 class="ftr-hdr">SÍGUENOS</h6>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/ItalikaOficial/?locale=es_LA" title="Facebook">
+                                <img width="24" height="24" alt="Like us on Facebook"
+                                    src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/italikaoficial/" target="_blank">
+                                <img width="24" height="24" alt="Follow us on Pinterest"
+                                    src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.tiktok.com/@italikaoficial?lang=es">
+                                <img width="24" height="24" alt="Follow us on Instagram"
+                                    src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png">
+                            </a>
+                        </li>
 
-					<div class="ftr-email-privacy-policy"></div>
-				</div>
+                    </ul>
+                </div>
 
-				<div class="footer-social">
-					<h6 class="ftr-hdr">SÍGUENOS</h6>
-					<ul>
-						<li>
-							<a href="https://www.facebook.com/ItalikaOficial/?locale=es_LA" title="Facebook">
-								<img width="24" height="24" alt="Like us on Facebook" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png">
-							</a>
-						</li>
-						<li>
-							<a href="https://www.instagram.com/italikaoficial/" target="_blank">
-								<img width="24" height="24" alt="Follow us on Pinterest"
-									src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png">
-							</a>
-						</li>
-						<li>
-							<a target="_blank" href="https://www.tiktok.com/@italikaoficial?lang=es">
-								<img width="24" height="24" alt="Follow us on Instagram" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png">
-							</a>
-						</li>
+                <div class="footer-legal">
+                    <p>&copy; ACM Inc. All Rights Reserved. | <a href="#" rel="nofollow">Privacy Policy</a> | <a
+                            href="#" rel="nofollow">Terms of Use</a> | <a href="#" rel="nofollow">Terms of Sale</a></p>
+                    <p>HUACOTTO © 2023. Todos los derechos reservados.</p>
+                    <p>Diseñado por el mejor pudge de la región </p>
+                    <img src="/ITALIKRACK/logo-italika.png" alt="">
+                </div>
 
-					</ul>
-				</div>
+            </div>
 
-				<div class="footer-legal">
-					<p>&copy; ACM Inc. All Rights Reserved. | <a href="#" rel="nofollow">Privacy Policy</a> | <a
-							href="#" rel="nofollow">Terms of Use</a> | <a href="#" rel="nofollow">Terms of Sale</a></p>
-					<p>HUACOTTO © 2023. Todos los derechos reservados.</p>
-					<p>Diseñado por el mejor pudge de la región </p>
-					<img src="/ITALIKRACK/logo-italika.png" alt="">
-				</div>
+        </div>
 
-			</div>
-
-		</div>
-
-	</footer>
+    </footer>
 
 </body>
 
