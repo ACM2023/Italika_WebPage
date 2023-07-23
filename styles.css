@@ -168,7 +168,7 @@ section#hero {
 
     /*CONTACTANOS*/
     .poster {
-		display: none;
+			
 	}
     .form2{
         width: 340px !important;
@@ -176,6 +176,7 @@ section#hero {
 	.Contactanos {
 		flex-direction: column;
 		height: 900px !important;
+		
         
 	}
 
@@ -360,6 +361,7 @@ h3 {
 	align-items: center;
 	color: white;
 	height: 1000px;
+	
 }
 .poster {
 	width: 50%;
