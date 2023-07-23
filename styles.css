@@ -1,144 +1,157 @@
-header {
-    height: 70px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url("https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Slider fondo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
-    background: transparent;
-	font-family: 'Rubik', sans-serif;
 }
-.LOGO{
-	padding-top: 5PX;
-}
-header .header-left {
-    display: flex;
-    align-items: center;
-}
-header .header-left .logo {
-    width: 140px;
-}
-header .header-left nav {
-    margin-left: 50px;
-}
-header .header-left nav ul {
-    display: flex;
-}
-nav ul li a {
-    display: block;
-    color: #cfd9e0;
-    font-size: 18px;
-    padding: 5px 10px;
-    transition: 0.2s;
-}
-nav ul li a:hover,
-nav ul li a.active {
-    color: #fff;
-}
-nav .login-signup {
-    display: none;
-}
-header .header-right {
-    display: flex;
-    align-items: center;
-}
-header .login-signup {
-    color: #cfd9e0;
+
+.navbar .logo a{
+    font-size: 1.5rem;
     font-weight: bold;
 }
-header .header-right .hamburger {
-    margin-left: 20px;
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
     cursor: pointer;
+}
+
+/* seccion para imagenes*/
+
+section#hero {
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* dropdown  */
+
+.dropdown_menu{
     display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgb(255, 255, 255. 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-header .header-right .hamburger div {
-    width: 30px;
-    height: 2px;
-    margin: 6px 0;
-    background: #fff;
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-@media only screen and (max-width: 1000px) {
-    header {
-        padding: 0 20px;
-    }
-    header .header-right .hamburger {
-        display: block;
-    }
-    header .header-left nav {
-        margin: 0;
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: fit-content;
-        background-color: transparent;
-        padding: 30px;
-        transition: 0.3s;
-        text-align: center;
-        z-index: -1;
-    }
-    header .header-left nav.active {
-        top: 70px;
-    }
-    header .header-left nav ul {
-        display: block;
-    }
+
+.dropdown_menu.open{
+    height: 240px;
 }
-@media only screen and (max-width: 500px) {
-    nav .login-signup {
-        display: block;
-        margin-top: 20px;
-    }
-    header .header-right .login-signup {
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* responsive */
+
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn {
         display: none;
     }
-	.h1_style {
-		text-align: center;
-		margin-top: 30px;
-	}
-	.Distribuidores_div_main {
-		flex-direction: column-reverse;
-	}
 
-	#search,
-	#distritos {
-		width: 80%;
-	}
+    .navbar .toggle_btn{
+        display: block;
+    }
 
-	#distritos {
-		height: auto;
-	}
+    .dropdown_menu{
+        display: block;
+    }
+}
 
-	.Distribuidores img {
-		height: 400px;
-		margin-bottom: 50px;
-	}
-	.Distribuidores h2 {
-		font-size: 50px;
-		margin-top: 0;
-		margin-left: 1000px;
-	}
-	.Respaldo h2 {
-		margin-left: 70px;
-		margin-right: 40px;
+@media (max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+    
+    /* ESPALDO */
+    .Respaldo h2 {
+		display: flex;
+        text-align: center;
+        margin-left: 30PX !important;
+        margin-right: 30PX !important;
 
 	}
 
 	.Respaldo_2 {
+        margin-top: 0px !important;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+        background-color: white;
+        
 	}
-
+    .Respaldo {
+        height: 2300PX !important;
+    }
 	.item {
 		text-align: center;
 		margin-bottom: 30px;
 	}
 
-	.item img {
-		width: 250px;
-		height: 250px;
-		margin-bottom: 10px;
-	}
+	
+    .Respaldo_2 img {
+        width: 250px !important;
+    }
 
 	.item h3 {
 		font-size: 30px;
@@ -149,759 +162,109 @@ header .header-right .hamburger div {
 		font-size: 20px;
 		line-height: 1.3;
 	}
-}
 
-body {
-	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	max-width: auto;
-	
-
-
-}
-
-p {
-	font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-	font-family: 'Rubik', sans-serif;
-}
-
-h2,
-h3 {
-	font-family: 'Rubik', sans-serif;
-	color: #00205B;
-}
-
-a {
-	text-decoration: none;
-	color: whitesmoke
-}
-
-.h1_style {
-	margin-top: 100000px;
-	position: absolute;
-	bottom: 80px;
-	left: 50%;
-	transform: translate(-50%, 0);
-	font-size: 70px;
-	color: white;
-	text-align: center;
-}
-
-/* SECCION 1: FONDO PRINCIPAL */
-.fondo_principal {
-	background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Slider fondo.png');
-	height: 920px;
-	position: relative;
-	background-color: transparent;
-}
-
-.navbar ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-.navbar ul li {
-	margin-right: 10px;
-	font-family: 'Rubik', sans-serif;
-}
-
-.navbar {
-	display: flex;
-	align-items: center;
-}
-
-.navbar ul li a {
-	text-decoration: none;
-	color: white;
-
-}
-
-header ul li a:hover {
-	color: #043a59;
-}
-
-.navbar img {
-	margin-right: 50px;
-	margin-bottom: 40px;
-}
-
-.navbar ul {
-	margin-right: 200px;
-}
-
-.navbar li {
-	margin-left: 50px;
-}
-
-
-.slider {
-	margin-top: 150px;
-}
-
-.slider .mejores_motos {
-	width: 920px;
-	height: 600px;
-	margin-left: 470px;
-}
-
-.slider .archivo_2 {
-	width: 600px;
-	height: 600px;
-	margin-left: 1200px;
-}
-
-.slider .archivo_3 {
-	width: 600px;
-	height: 600px;
-	margin-left: 1200px;
-}
-
-.fondo_principal .facebook {
-	position: absolute;
-	bottom: 500px;
-	right: 25px;
-	width: 30px;
-	height: 30px;
-}
-
-.fondo_principal .insta {
-	position: absolute;
-	bottom: 450px;
-	right: 25px;
-	width: 30px;
-	height: 30px;
-}
-
-.fondo_principal .tiktok {
-	position: absolute;
-	bottom: 400px;
-	right: 25px;
-	width: 30px;
-	height: 30px;
-}
-
-@keyframes cambio {
-	0% {
-		margin-left: 0;
+    /*CONTACTANOS*/
+    .poster {
+		display: none;
 	}
-
-	4% {
-		margin-left: 0;
-	}
-
-	16% {
-		margin-left: -100%;
-	}
-
-	28% {
-		margin-left: -100%;
-	}
-
-	40% {
-		margin-left: -200%;
-	}
-
-	52% {
-		margin-left: -200%;
-	}
-
-	64% {
-		margin-left: -200%;
-	}
-
-	100% {
-		margin-left: -200%;
-	}
-}
-
-@media screen and (max-width: 780px) {
-	@media screen and (max-width: 780px) {
-		.slider img {
-			width: 100%;
-			height: auto;
-			/* Aplica la proporción deseada */
-			max-width: 300px;
-			max-height: 400px;
-		}
-	}
-
-	.main {
-		height: 920px;
-	}
-
-	.nav_color {
-		background-color: transparent;
-	}
-
-	.navbar {
-		display: flex;
+    .form2{
+        width: 340px !important;
+    }
+	.Contactanos {
 		flex-direction: column;
-		align-items: center;
-		padding: 100rem;
+        height: 800px !important;
 	}
 
-	.navbar ul li {
+	.Formulario {
+		margin-left: -500px;
+        width: 50px !important;; 
+        display: flex;
+	}
+    .formulario2{
+       
+        width: 10px !important;
+    }
+  
+	.Formulario h2 {
+		font-size: 18px !important;
 		margin-right: 10px;
-		margin-bottom: 20px;
-		font-size: 25px;
-		font-family: 'Rubik', sans-serif;
+		margin-top: 40px;
+		white-space: nowrap;
+		margin-bottom: 50px;
+	}
+    .enviar{
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+    .Formulario input {
+        width: 300px !important;
+        height: 20px;
+        padding: 10px;
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        color: white !important;
+    
+    }
+    .Formulario textarea {
+        width: 300px !important;
+        height: 100px;
+        padding: 10px;
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        color: white !important;
+    }
+   
+    /* RESPALDO */
+    /*================MAPA==========================*/
+    .Distribuidores {
+        background-color: white;
+    }
+    .Distribuidores_div_main {
+		flex-direction: column-reverse;
 	}
 
-	nav a.hover {
-		color: white
+	#search,
+	#distritos {
+		width: 200PX !important;
 	}
 
-	.ul_nav {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		list-style: none;
-		padding: 0;
-		margin: 1rem 0;
-	}
-
-	.fondo_principal {
-		height: 920px;
-
-	}
-
-	header ul li a:hover {
-		color: #043a59;
-	}
-
-	.navbar ul {
-		margin-right: -0px;
-	}
-
-	.h1_style {
-		margin-left: 20px;
-		font-size: 40px;
-
-	}
-
-	.slider {
-		margin-top: 450px;
-	}
-
-	.slider ul {
-		margin-top: 0px;
-		display: flex;
-		animation: cambio 16s infinite linear;
-		height: 100px;
-		width: 300%;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-
-
-	.slider .mejores_motos {
-		width: 1000px;
-		height: 300px;
-		margin-left: 200px;
-
-	}
-
-	.slider .archivo_2 {
-		width: 500px;
-		height: 300px;
-		margin-left: 300px;
-
-	}
-
-	.slider .archivo_3 {
-		width: 500px;
-		height: 300px;
-		margin-left: 300px;
-	}
-
-
-	/* .slider ul {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	} */
-
-	.h1_style {
-		text-align: center;
-		margin-top: 30px;
-	}
-
-	.facebook,
-	.insta,
-	.tiktok {
-		display: block;
-		margin: 10px auto;
-		width: 40px;
-		height: 40px;
-	}
-
-	.navbar img {
-		margin-left: -40px;
-	}
-
-	@keyframes cambio {
-		0% {
-			margin-left: 0;
-		}
-	
-		4% {
-			margin-left: 0;
-		}
-	
-		16% {
-			margin-left: -100%;
-		}
-	
-		28% {
-			margin-left: -100%;
-		}
-	
-		40% {
-			margin-left: -200%;
-		}
-	
-		52% {
-			margin-left: -200%;
-		}
-	
-		64% {
-			margin-left: -200%;
-		}
-	
-		100% {
-			margin-left: -200%;
-		}
-	}
-}
-
-@media screen and (max-width: 380px) {
-	.slider img {
-	  width: 100%;
-	  height: auto;
-	  /* Aplica la proporción deseada */
-	  max-width: 300px;
-	  max-height: 400px;
-	}
-  
-	.navbar {
-	  padding: 1rem;
-	}
-  
-	.slider {
-	  margin-top: 250px;
-	}
-  
-	.slider ul {
-	  height: 75px;
-	}
-  
-	.slider .mejores_motos,
-	.slider .archivo_2,
-	.slider .archivo_3 {
-	  width: 300px;
-	  height: 400px;
-	  margin-left: 0;
-	}
-  }
-
-/* ===================================== */
-/* SECCION 2 : MODELOS */
-.Modelos {
-	height: 800px;
-}
-
-.Modelos h2 {
-	font-size: 50px;
-	color: #00205b;
-	margin-left: 220px;
-	margin-top: 50px;
-}
-
-.container {
-
-	width: 100%;
-	height: 100%;
-	max-width: 600px;
-	max-height: 600px;
-	display: flex;
-	transform-style: preserve-3d;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.cards {
-
-	position: relative;
-	height: 500px;
-	width: 430px;
-	margin-bottom: 20px;
-	perspective: 1000px;
-	transform-style: preserve-3d;
-}
-
-.cards label {
-
-	position: absolute;
-	width: 430px;
-	left: 0;
-	right: 0;
-	margin: auto;
-	cursor: pointer;
-	transition: transform 0.55s ease;
-}
-
-.cards .card {
-
-	position: relative;
-	height: 100%;
-	background-color: white;
-	border-radius: 10px;
-	padding: 30px 30px;
-
-}
-
-.card .image {
-
-	display: flex;
-	justify-content: space-between;
-}
-
-.card .image img {
-
-
-
-	margin-top: 23px;
-	width: 86%;
-	height: 220px;
-	object-fit: cover;
-}
-
-.card .image .dots {
-
-	text-align: center;
-}
-
-.dots div {
-
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	margin-bottom: 10px;
-}
-
-.dots div:nth-child(1) {
-
-	background-color: var(--current-color1);
-}
-
-.dots div:nth-child(2) {
-
-	background-color: #5B85F9;
-}
-
-.dots div:nth-child(3) {
-
-	background-color: #000;
-}
-
-.card .infos {
-
-	display: block;
-	text-align: end;
-	padding-top: 60px;
-}
-
-.infos span {
-
-	display: block;
-	text-align: center;
-}
-
-.infos .name {
-
-	font-size: 30px;
-	color: var(--current-color1);
-	letter-spacing: 8px;
-	margin-bottom: 20px;
-	padding-left: 2%;
-	text-align: center;
-	transition: all .6s ease;
-}
-
-.infos .lorem {
-
-	font-size: 15.5px;
-	color: #00205B;
-	letter-spacing: 3px;
-}
-
-
-.socials i {
-
-	font-size: 25px;
-	transition: all .7s ease;
-	color: var(--current-color2);
-}
-
-
-
-#s1:checked~.cards #slide4,
-#s2:checked~.cards #slide5,
-
-#s5:checked~.cards #slide3 {
-	box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-	transform: translate3d(-70%, 0, -220px);
-	--current-color1: #ECEAED;
-	--current-color2: #404457;
-}
-
-#s1:checked~.cards #slide5,
-#s2:checked~.cards #slide1,
-
-#s5:checked~.cards #slide4 {
-	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-	transform: translate3d(-35%, 0, -120px);
-	--current-color1: #ECEAED;
-	--current-color2: #404457;
-}
-
-#s1:checked~.cards #slide1,
-#s2:checked~.cards #slide2,
-
-#s5:checked~.cards #slide5 {
-	box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%);
-	transform: translate3d(0, 0, 0);
-	--current-color1: #00205B;
-	--current-color2: #ECEAED;
-}
-
-#s1:checked~.cards #slide2,
-#s2:checked~.cards #slide3,
-
-#s5:checked~.cards #slide1 {
-	box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%);
-	transform: translate3d(35%, 0, -120px);
-	--current-color1: #ECEAED;
-	--current-color2: #404457;
-}
-
-#s1:checked~.cards #slide3,
-#s2:checked~.cards #slide4,
-
-#s5:checked~.cards #slide2 {
-	box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-	transform: translate3d(70%, 0, -220px);
-	--current-color1: #ECEAED;
-	--current-color2: #404457;
-}
-
-
-
-
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
-}
-
-@media screen and (max-width: 780px) {
-	.Modelos h2 {
-		margin-left: 150px;
-	}
-
-	.cards {
-		flex-direction: column;
-		align-items: center;
-	}
-
-
-	.card {
-		width: 80%;
-		height: auto;
-		margin-bottom: 20px;
-	}
-
-	.card .image {
-		display: flex;
-		justify-content: center;
-	}
-
-	.card .image img {
-		width: 100%;
+	#distritos {
 		height: auto;
 	}
 
-	#s5:checked~.cards #slide5 {
-		box-shadow: none;
-
+	.Distribuidores iframe {
+		height: 600px !important;
+        width: 300px !important;
+		margin-bottom: 50px;
 	}
-
-	#s2:checked~.cards #slide2 {
-		box-shadow: none;
-
+	.Distribuidores h2 {
+		font-size: 40px !important;
+		margin-top: 0;
+		margin-left: 1000px;
 	}
+    /*================MAPA==========================*/
 
-	#s1:checked~.cards #slide1 {
-		box-shadow: none;
-
-	}
-
-	#s1:checked~.cards #slide2,
-	#s2:checked~.cards #slide3,
-	#s5:checked~.cards #slide1 {
-		box-shadow: none;
-
-	}
-
-	.card .infos {
-		text-align: center;
-		margin-top: 25px;
-	}
-
-	.card .name {
-		font-size: 20px;
-	}
-
-	.card .lorem {
-		font-size: 20px;
-	}
-
-	.card .dots {
-		display: none;
-	}
-}
-@media screen and (max-width: 380px) {
-	.Modelos h2 {
-		margin-left: 20px;
-	}
-
-	.cards {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.card {
-		width: 80%;
-		height: auto;
-		margin-bottom: 20px;
-	}
-
-	.card .image {
-		display: flex;
-		justify-content: center;
-	}
-
-	.card .image img {
-		width: 100%;
-		height: auto;
-	}
-
-	#s5:checked~.cards #slide5,
-	#s2:checked~.cards #slide2,
-	#s1:checked~.cards #slide1,
-	#s1:checked~.cards #slide2,
-	#s2:checked~.cards #slide3,
-	#s5:checked~.cards #slide1 {
-		box-shadow: none;
-	}
-
-	.card .infos {
-		text-align: center;
-		margin-top: 10px;
-	}
-
-	.card .name {
-		font-size: 16px;
-	}
-
-	.card .lorem {
-		font-size: 16px;
-	}
-
-	.card .dots {
-		display: none;
-	}
-}
+    /* FOOTER */
+    .footer-custom{
+        height: 700px !important;
+    }
+    
+    /* FOOTER */
+} 
 
 
-
-
-
-
-
-/* ===================================== */
-/* SECCION 3 : ABOUTS */
-.About {
-	background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-quienes-somos.png');
-}
-
-.About .About_2 {
-	height: 994px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 100px;
-}
-
-.About .About_2 .About_3 {
-	margin-left: 150px;
-}
-
-.About_3 h2 {
-	font-size: 50px;
-	color: white;
-	margin-bottom: 50px;
-}
-
-.About_3 p {
-	font-size: 16px;
-	color: white;
-	font-family: 'Open Sans', sans-serif;
-}
-
-@media screen and (max-width: 780px) {
-	.About {
-		background-position-x: -100px;
-	}
-
-	.About .About_2 .About_3 {
-		margin-left: 50px;
-	}
-
-	.About_3 p {
-		font-size: 18px;
-		margin-bottom: 80px;
-	}
-
-}
-@media screen and (max-width: 380px) {
-	.About {
-		background-position-x: 0;
-	}
-
-	.About .About_2 .About_3 {
-		margin-left: 20px;
-	}
-
-	.About_3 p {
-		font-size: 14px;
-		margin-bottom: 40px;
-	}
-}
 
 /* ===================================== */
 /* SECCION 4 : RESPALDO */
 .Respaldo {
 	background-color: white;
 	;
-	margin: 100px 0;
+	margin: -15px 0;
+    height: 400px;
 }
 
 .Respaldo h2 {
@@ -936,49 +299,12 @@ header ul li a:hover {
 .Respaldo_2 p {
 	color: #13226E;
 }
-
-/* @media only screen and (max-width: 780px) {
-	.Respaldo h2 {
-		margin-left: 70px;
-		margin-right: 40px;
-
-	}
-
-	.Respaldo_2 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.item {
-		text-align: center;
-		margin-bottom: 30px;
-	}
-
-	.item img {
-		width: 250px;
-		height: 250px;
-		margin-bottom: 10px;
-	}
-
-	.item h3 {
-		font-size: 30px;
-		margin-bottom: 5px;
-	}
-
-	.item p {
-		font-size: 20px;
-		line-height: 1.3;
-	}
-} */
-
-/* ===================================== */
-/* SECCION 5 : DISTRIBUIDORES */
-
+/*===========================================*/
 .Distribuidores {
 	text-align: center;
 	color: #00205b;
 	font-family: 'Rubik', sans-serif;
+    height: 1200px;
 	
 }
 
@@ -1014,88 +340,13 @@ h3 {
 	height: 50px;
 }
 
-img {
-	max-width: 100%;
-	margin-bottom: 50px;
+.Distribuidores iframe {
+    height: 900px;
+    width: 1500px;
+    margin-bottom: 50px;
 }
-
-/* @media screen and (max-width: 500px) {
-	.Distribuidores_div_main {
-		flex-direction: column-reverse;
-	}
-
-	#search,
-	#distritos {
-		width: 80%;
-	}
-
-	#distritos {
-		height: auto;
-	}
-
-	.Distribuidores img {
-		height: 400px;
-		margin-bottom: 50px;
-	}
-	.Distribuidores h2 {
-		font-size: 50px;
-		margin-top: 0;
-		margin-left: 1000px;
-	}
-} */
-
-.Distribuidores {
-	background-color: #f2f2f2;
-	height: 800px;
-	margin-top: 100px;
-}
-
-.Distribuidores h2 {
-	color: #13226E;
-	margin-top: 20px;
-	margin-left: 220px;
-	font-size: 50px;
-	font-family: 'Rubik', sans-serif;
-}
-
-.Distribuidores input {
-	margin-left: 600px;
-	margin-top: 20px;
-	padding: 5px;
-	width: 1000px;
-}
-
-.Distribuidores h3 {
-	font-family: 'Open Sans', sans-serif;
-	color: #13226E;
-}
-
-.Distribuidores select {
-
-	color: #13226E;
-	font-size: 20px;
-	float: right;
-	background-color: white;
-}
-
-.Distribuidores img {
-	display: block;
-	margin-left: 20px;
-	margin-top: 20px;
-}
-
-.Distribuidores_div {
-	background-color: #f2f2f2;
-	padding: 20px;
-	overflow-y: auto
-}
-
-.Distribuidores_div_main {
-	display: flex;
-	margin-left: 220px;
-}
-
-/* ==================================== */
+/* SECCION 5 : DISTRIBUIDORES */
+/*===========================================*/
 /* SECCION 6 : CONTACTANOS */
 .Contactanos {
 	background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-contacto.png');
@@ -1110,11 +361,11 @@ img {
 	width: 50%;
 	padding: 50px;
 	margin-left: 300PX;
-	display: flex;
 }
 
 .poster .post1 {
-	height: 800PX;
+    background-color: white;
+	height: 600PX;
 	width: 600PX;
 	margin-bottom: 50PX
 }
@@ -1157,7 +408,6 @@ img {
 	color: transparent"
 
 }
-
 .Formulario textarea {
 	width: 500px;
 	height: 100px;
@@ -1182,42 +432,7 @@ img {
 	width: 200px
 }
 
-@media screen and (max-width: 780px) {
-	.poster {
-		display: none;
-	}
-
-	.Contactanos {
-		flex-direction: column;
-	}
-
-	.Formulario {
-		margin-left: -500px;
-	}
-
-	.Formulario h2 {
-		font-size: 20px;
-		margin-right: 20px;
-		margin-top: 40px;
-		white-space: nowrap;
-		margin-bottom: 50px;
-	}
-
-}
-
-/* ===================================== */
-
-
-
-
-
-
-
-
-
-
-
-
+/* FOOTER ESTILOS */
 .footer-gray {
 	background-color: #002058;
 	width: 100%;
@@ -1544,24 +759,6 @@ img {
 	width: 33.333%;
 } */
 
-.slider img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 767px) {
@@ -1586,3 +783,6 @@ img {
 		display: block;
 	}
 }
+
+
+/* FOOTER ESTILOS */
