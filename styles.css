@@ -122,6 +122,9 @@ section#hero {
         left: 2rem;
         width: unset;
     }
+	.logo{
+		width: 220px
+	}
     
     /* ESPALDO */
     .Respaldo h2 {
