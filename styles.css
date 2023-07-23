@@ -168,7 +168,9 @@ section#hero {
 
     /*CONTACTANOS*/
     .poster {
-
+		width: 50px !important;
+		height: 200px !important;
+		margin-left: -500px !important;
 	}
     .form2{
         width: 340px !important;
@@ -182,7 +184,7 @@ section#hero {
 
 	.Formulario {
 		margin-left: -500px;
-        width: 50px !important;; 
+        width: 50px !important; 
         display: flex;
 	}
     .formulario2{
