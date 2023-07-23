@@ -4,8 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Italika | Siéntele, vívela y manéjala</title>
-	<link rel="icon" alt="" href="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto.png"/>
-	<link rel="stylesheet" href="https://acm2023.github.io/Italika_WebPage/styles.css">
+	<link rel="icon" alt="" href="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/moto.png" />
+	<!-- 
+<link rel="stylesheet" href="https://acm2023.github.io/Italika_WebPage/styles.css"> -->
 	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,14 +18,75 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
 		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-	<section class="main">
-	<div class="fondo_principal">
+	
+		<header>
+			<img style="padding-top: 50px;" class="LOGO" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/logo-italika.png" alt="logotipo de Italika">
+			<div class="header-left">
+				<div class="logo">
+					<img src="./logo.png" alt="">
+				</div>
+				<nav>
+					
+					<ul>
+						<li><a href="#modelos">MODELOS </a></li>
+						<li><a href="#nosotros">NOSOTROS </a></li>
+						<li><a href="#respaldo">RESPALDO </a></li>
+						<li><a href="#distribuidores">TIENDAS</a></li>
+						<li><a href="#contactanos">CONTACTO </a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-right">
+				<div class="hamburger">
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+			</div>
+		</header>
+
+		<script>
+			hamburger = document.querySelector(".hamburger");
+			nav = document.querySelector("nav");
+			hamburger.onclick = function () {
+				nav.classList.toggle("active");
+			}
+		</script>
+		<section style="height: 900px;background-color: red;">
+			<div>
+				<h1 class="motos-best" style="color: white;text-align: center;margin-top: 1000px;">LAS MEJORES MOTOS</h1>
+			</div>
+		</section>
+		<!-- <section class="main">
+			<div class="fondo_principal" style="margin-top: 260px;">
+				<div class="slider">
+					<ul>
+						<li>
+							<img class="mejores_motos" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/las-mejores-motos.png" alt="moto lineal blanca">
+						</li>
+						<li>
+							<img class="archivo_2" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Archivo-2.png" alt="imagen 2">
+						</li>
+						<li>
+							<img class="archivo_3" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/archivo-3.png" alt="imagen 3">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h1 class="h1_style">DE TODO EL PERÚ</h1>
+		<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/icono-wsp.png" alt="icono de WhatsApp" style="position: absolute; bottom: 0; right: 0;">
+		<a href="https://www.facebook.com/ItalikaOficial/?locale=es_LA"><img class="facebook" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png" alt="icono de Facebook"></a>
+		<a href=https://www.instagram.com/italikaoficial/ ><img class="insta" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png" alt="icono de Instagram"></a>
+		<a href="https://www.tiktok.com/@italikaoficial?lang=es" ><img class="tiktok" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png" alt="icono de TikTok"></a>
+		</section> -->
+		<!-- <div class="fondo_principal">
 		<header class="nav_color">
+			<div class="header-left">
 			<nav class="navbar">
 			  <img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/logo-italika.png" alt="logotipo de Italika">
 			  <ul class="ul_nav">
@@ -35,7 +97,16 @@
 				<li><a href="#contactanos">CONTACTO</a></li>
 			  </ul>
 			</nav>
+		</div>
+		<div class="header-right">
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 		  </header>
+		  
 	
 		<div class="slider">
 			<ul>
@@ -53,13 +124,13 @@
 	
 		<h1 class="h1_style">DE TODO EL PERÚ</h1>
 		<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/icono-wsp.png" alt="icono de WhatsApp" style="position: absolute; bottom: 0; right: 0;">
-		<img class="facebook" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png" alt="icono de Facebook">
-		<img class="insta" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png" alt="icono de Instagram">
-		<img class="tiktok" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png" alt="icono de TikTok">
-	</div>
-</section>
-	<!-- SECCION 2 -->
-	<section class="Modelos" id="modelos">
+		<a href="https://www.facebook.com/ItalikaOficial/?locale=es_LA"><img class="facebook" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/facebook.png" alt="icono de Facebook"></a>
+		<a href=https://www.instagram.com/italikaoficial/ ><img class="insta" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/instagram.png" alt="icono de Instagram"></a>
+		<a href="https://www.tiktok.com/@italikaoficial?lang=es" ><img class="tiktok" src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/tiktok.png" alt="icono de TikTok"></a>
+	</div> -->
+	
+
+	<!-- <section class="Modelos" id="modelos">
 		<h2>MODELOS</h2>
 		<div class="container">
 			<input type="radio" name="slider" class="d-none" id="s1" checked>
@@ -117,9 +188,9 @@
 				</label>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="About" id="nosotros">
+	<!-- <section class="About" id="nosotros">
 		<div class="About_2">
 			<div class="About_3">
 				<h2>TE LO CONTAMOS</h2>
@@ -134,7 +205,7 @@
 			</div>
 
 		</div>
-	</section>
+	</section> -->
 
 	<!-- SECCION 4- RESPALDO -->
 
@@ -171,7 +242,7 @@
 
 	<!-- SECCION 5- DISTRIBUIDORES -->
 
-	<section class="Distribuidores" id="distribuidores">
+	<!-- <section class="Distribuidores" id="distribuidores">
 		<div class="Distribuidores_div_main">
 		  <h2>DISTRIBUIDORES</h2>
 		  <input type="text" id="search" placeholder="Buscar distrito">
@@ -197,11 +268,11 @@
 		  </div>
 		</div>
 		<img src="https://acm2023.github.io/Italika_WebPage/ITALIKRACK/mapa-distribuidores.png" alt="MDN">
-	  </section>
+	  </section> -->
 
 	<!-- SECCION 6- CONTACTANOS -->
 
-	<section class="Contactanos" id="contactanos">
+	<!-- <section class="Contactanos" id="contactanos">
 		<div class="poster">
 		  <h2 style="font-size: 50px; margin-bottom: 20px">
 			CONTÁCTANOS</h2>
@@ -227,7 +298,7 @@
 			</div>
 		  </form>
 		</div>
-	  </section>
+	  </section> -->
 
 
 	<footer>
