@@ -168,7 +168,7 @@ section#hero {
 
     /*CONTACTANOS*/
     .poster {
-		
+		margin-left: -300px !important;
 	}
 	.poster .post1 {
 		background-color: white;
