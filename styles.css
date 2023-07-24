@@ -5,7 +5,6 @@
 
 body{
     height: 100vh;
-    background-image: url("https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Slider fondo.png");
     background-size: cover;
     background-position: center;
 }
@@ -23,6 +22,10 @@ a{
 header{
     position: relative;
     padding: 0 2rem;
+    height: 100vh;
+    background-image: url("https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Sliderfondo.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .navbar{
@@ -125,8 +128,22 @@ section#hero {
 	.img .logo{
 		width: 100px !important;
 	}
-    
-    /* ESPALDO */
+	/*ABOUT*/
+	.About .About_2 {
+        padding: 0 20px;
+    }
+
+    .About_3 h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .About_3 p {
+        font-size: 12px;
+    }
+    /*ABOUT*/
+
+    /* RESPALDO */
     .Respaldo h2 {
 		display: flex;
         text-align: center;
@@ -268,6 +285,27 @@ section#hero {
     
     /* FOOTER */
 } 
+@media (max-width: 1280px) {
+    .About .About_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .About .About_2 .About_3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .About_3 h2 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .About_3 p {
+        font-size: 14px;
+    }
+}
+
 /* ===================================== */
 
 /* SECCION 3 : ABOUT */
