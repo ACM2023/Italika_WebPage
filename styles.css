@@ -121,6 +121,10 @@ section#hero {
 }
 
 @media (max-width: 576px){
+	.About{
+		background-image: url("https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Slider fondo.png");
+		background-position: -10%;
+	}
     .dropdown_menu{
         left: 2rem;
         width: unset;
