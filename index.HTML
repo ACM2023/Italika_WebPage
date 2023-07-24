@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik:wght@300;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://acm2023.github.io/Italika_WebPage/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -70,7 +71,7 @@
         toggleBtnIcon.classList = isOpen
             ? "fa-solid fa-xmark"
             : "fa-solid fa-bars"
-    }      
+    }    
 </script>
 
 
@@ -79,6 +80,48 @@
 
  <!-- SECCION 2- CARRUSEL -->
 
+<section>
+   
+    <H1 class="moto">LAS MEJORES MOTOS</H1>
+
+<div class="slideshow-container">
+
+  
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <h2 class="moto1">MOTO DEPORTIVA</h2>
+      <img src="/ITALIKRACK/moto-deportiva.png" style="width:100%">
+      <div class="text">Llega más rápido a tu destino, estés donde estés </div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <h2 class="moto1">MOTO TODOTERRENO</h2>
+      <img src="/ITALIKRACK/moto-todo-terreno.png" style="width:100%">
+      <div class="text">Supera cualquier obstáculo mientras conduces</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <h2 class="moto1">MOTO PARA TRABAJO</h2>
+      <img src="/ITALIKRACK/moto-trabajo.png" style="width:100%">
+      <div class="text">Ideal para largas jornadas y con alto rendimiento de combustible</div>
+    </div>
+  
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+ 
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+</section>
 
 
 <!-- SECCION 3- NOSOTROS -->
