@@ -95,6 +95,30 @@ header{
     
 }
 
+ .facebook {
+	position: absolute;
+	bottom: 500px;
+	right: 25px;
+	width: 30px;
+	height: 30px;
+}
+
+.insta {
+	position: absolute;
+	bottom: 450px;
+	right: 25px;
+	width: 30px;
+	height: 30px;
+}
+
+ .tiktok {
+	position: absolute;
+	bottom: 400px;
+	right: 25px;
+	width: 30px;
+	height: 30px;
+}
+
 /* slider navbar  */
 
 
@@ -124,9 +148,11 @@ header{
 /* carrusel*/
 
   
-
-.moto{
+.moto0{
 	text-align: center;
+	color: white;
+}
+.moto{
 	font-size: 50px;
 }
 
