@@ -268,10 +268,65 @@ section#hero {
     
     /* FOOTER */
 } 
+/* ===================================== */
 
+/* SECCION 3 : ABOY */
 
 
 /* ===================================== */
+.About {
+    background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-quienes-somos.png');
+}
+
+.About .About_2 {
+    height: 994px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.About .About_2 .About_3 {
+    margin-left: 150px;
+}
+
+.About_3 h2 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.About_3 p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+.About {
+    background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-quienes-somos.png');
+}
+
+.About .About_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.About .About_2 .About_3 {
+    margin-left: 150px;
+}
+
+.About_3 h2 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.About_3 p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
 /* SECCION 4 : RESPALDO */
 .Respaldo {
 	background-color: white;
