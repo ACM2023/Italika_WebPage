@@ -122,7 +122,15 @@ header{
 /* slider navbar */
 
 /* carrusel*/
-
+.moto1{
+	color: #13226E;
+	font-family: 'Rubik', sans-serif;
+	
+}
+.moto2{
+	color: #13226E;
+	font-family: 'Rubik', sans-serif;
+}
   
 
 .moto{
@@ -173,10 +181,11 @@ header{
 
 
 .text {
-  color: black;
+  color: #13226E;
   font-size: 30px;
   padding: 8px 12px;
   position: absolute;
+  font-family: 'Rubik', sans-serif;
   bottom: 8px;
   width: 100%;
   text-align: center;
