@@ -270,10 +270,7 @@ section#hero {
 } 
 /* ===================================== */
 
-/* SECCION 3 : ABOY */
-
-
-/* ===================================== */
+/* SECCION 3 : ABOUT */
 .About {
     background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-quienes-somos.png');
 }
@@ -327,6 +324,9 @@ section#hero {
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
+
+/* ===================================== */
+
 /* SECCION 4 : RESPALDO */
 .Respaldo {
 	background-color: white;
