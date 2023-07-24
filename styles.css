@@ -173,6 +173,13 @@ section#hero {
 		margin-left: -500px !important;
 		margin-bottom: 500px !important;
 	}
+	.poster .post1 {
+		background-color: white;
+		height: 670PX;
+		width: 380PX;
+		margin-bottom: 50PX;
+		margin-left: 75px;
+	}
     .form2{
         width: 340px !important;
     }
@@ -182,6 +189,7 @@ section#hero {
 		
         
 	}
+	
 
 	.Formulario {
 		margin-left: -500px;
