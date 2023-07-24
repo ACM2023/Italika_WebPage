@@ -168,17 +168,15 @@ section#hero {
 
     /*CONTACTANOS*/
     .poster {
-		width: 25px !important;
-		height: 200px !important;
 		margin-left: -500px !important;
 		margin-bottom: 500px !important;
 	}
 	.poster .post1 {
 		background-color: white;
-		height: 670PX;
-		width: 380PX;
+		height: 670PX !important;
+		width: 380PX !important;
 		margin-bottom: 50PX;
-		margin-left: 75px;
+		margin-left: 75px !important;; 
 	}
     .form2{
         width: 340px !important;
