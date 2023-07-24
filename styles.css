@@ -151,6 +151,9 @@ header{
 	.img .logo{
 		width: 100px !important;
 	}
+	.carousel-slide{
+		width: 100% !important;
+	}
 	/*ABOUT*/
 	.About .About_2 {
         padding: 0 20px;
