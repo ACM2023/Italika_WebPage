@@ -30,6 +30,7 @@ header{
     background-image: url("https://acm2023.github.io/Italika_WebPage/ITALIKRACK/Slider fondo.png");
     background-size: cover;
     background-position: center;
+	font-family: 'Rubik', sans-serif;
 }
 
 .navbar{
@@ -134,6 +135,7 @@ header{
 
     .dropdown_menu{
         display: block;
+		font-family: 'Rubik', sans-serif;
     }
 }
 
@@ -163,6 +165,7 @@ header{
     .About_3 h2 {
         font-size: 30px;
         margin-bottom: 20px;
+		font-family: 'Rubik', sans-serif;
     }
 
     .About_3 p {
@@ -227,6 +230,7 @@ header{
 	.Contactanos {
 		flex-direction: column;
 		height: 1700px !important;
+		font-family: 'Rubik', sans-serif;
 		
         
 	}
@@ -248,6 +252,7 @@ header{
 		margin-top: 40px;
 		white-space: nowrap;
 		margin-bottom: 50px;
+		font-family: 'Rubik', sans-serif;
 	}
     .enviar{
         margin-left: 50px !important;
@@ -279,6 +284,7 @@ header{
     /*================MAPA==========================*/
     .Distribuidores {
         background-color: white;
+		font-family: 'Rubik', sans-serif;
     }
     .Distribuidores_div_main {
 		flex-direction: column-reverse;
@@ -326,6 +332,7 @@ header{
     .About_3 h2 {
         font-size: 40px;
         margin-bottom: 30px;
+		font-family: 'Rubik', sans-serif;
     }
 
     .About_3 p {
@@ -338,6 +345,7 @@ header{
 /* SECCION 3 : ABOUT */
 .About {
     background-image: url('https://acm2023.github.io/Italika_WebPage/ITALIKRACK/fondo-quienes-somos.png');
+	font-family: 'Rubik', sans-serif;
 }
 
 .About .About_2 {
@@ -382,6 +390,7 @@ header{
     font-size: 50px;
     color: white;
     margin-bottom: 50px;
+	font-family: 'Rubik', sans-serif;
 }
 
 .About_3 p {
@@ -490,6 +499,7 @@ h3 {
 	align-items: center;
 	color: white;
 	height: 1000px;
+	font-family: 'Rubik', sans-serif;
 	
 }
 .poster {
